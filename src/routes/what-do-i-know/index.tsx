@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import Skills from "../../components/skills/Skills";
 
 import styles from "./what-do-i-know.module.css";
 
@@ -7,5 +8,10 @@ export const Route = createFileRoute("/what-do-i-know/")({
 });
 
 function RouteComponent() {
-  return <div>Hello "/what-do-i-know/"!</div>;
+  return (
+    <div>
+      <Skills type="git"></Skills>
+      <Skills type="nestjs"></Skills>
+    </div>
+  );
 }

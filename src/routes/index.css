@@ -1,9 +1,28 @@
 .bg {
   position: fixed;
   z-index: -1;
-  background-color: #3A3A3A;
+  background-color: #2c2c2c;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
+}
+
+.frontpageContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.socialsContainer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
 }
