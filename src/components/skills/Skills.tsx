@@ -1,3 +1,5 @@
+import styles from "./skills.module.css";
+
 type Skills = {
   type:
     | "css"
@@ -17,8 +19,9 @@ export default function Skills({ type }: Skills) {
   const iconPath = `assets/skills/${type}.svg`;
 
   return (
-    <div className="">
+    <div className={styles.skill}>
       <img src={iconPath} alt="" className="" />
+      <p>{type}</p>
     </div>
   );
 }

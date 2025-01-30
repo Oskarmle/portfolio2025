@@ -1,0 +1,25 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.whatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  gap: 100px;
+}
+
+.whatContainer p {
+  width: 800px;
+}
+
+.skillContainer{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}

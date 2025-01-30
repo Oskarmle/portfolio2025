@@ -1,4 +1,4 @@
-.button {
+.primary {
   width: 270px;
   height: 50px;
   border: 1px solid #e4e4e4;
@@ -19,5 +19,13 @@
   border: 1px solid #2da2dc;
   color: #2da2dc;
   box-shadow: 1px 1px 10px 1px #2da2dc;
+  cursor: pointer;
+}
+
+.send {
+  border: none;
+  background: none;
+  color: #d3d3d3;
+  font-size: 16px;
   cursor: pointer;
 }

@@ -12,7 +12,7 @@ function RouteComponent() {
   return (
     <div>
       <div className={styles.buttonContainer}>
-        <Button text="Who am I?"></Button>
+        <Button variant="noClick" text="Who am I?"></Button>
       </div>
       <BackButton></BackButton>
       <div className={styles.WhoContainer}>
