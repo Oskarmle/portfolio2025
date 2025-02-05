@@ -20,7 +20,7 @@ export default function Skills({ type }: Skills) {
 
   return (
     <div className={styles.skill}>
-      <img src={iconPath} alt="" className="" />
+      <img src={iconPath} alt="" />
       <p>{type}</p>
     </div>
   );
