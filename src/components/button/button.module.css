@@ -8,6 +8,7 @@
   align-items: center;
   color: #e4e4e4;
   transition: 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .buttonText {
@@ -15,11 +16,22 @@
   font-weight: 500;
 }
 
-.button:hover {
+.primary:hover {
   border: 1px solid #2da2dc;
-  color: #2da2dc;
   box-shadow: 1px 1px 10px 1px #2da2dc;
   cursor: pointer;
+}
+
+.noClick {
+  width: 270px;
+  height: 50px;
+  border: 1px solid #e4e4e4;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e4e4e4;
+  transition: 200ms ease-in-out;
 }
 
 .send {

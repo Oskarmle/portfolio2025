@@ -1,0 +1,64 @@
+.projectContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.24;
+}
+
+.techStack {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: auto;
+  margin-top: 200px;
+}
+
+.techHeader {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+}
+
+.github {
+  cursor: pointer;
+}
+
+.githubLink {
+  text-decoration: underline;
+}
+
+.github img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.line {
+  height: 100px;
+  width: 2px;
+  background: #e4e4e4;
+}

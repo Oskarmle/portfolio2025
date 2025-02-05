@@ -32,7 +32,7 @@ export default function Frontpage() {
   return (
     <div>
       <div className="frontpageContainer">
-        <Button text="Who am I?" onClick={handleWhoAmIClick}></Button>
+        <Button variant="primary" text="Who am I?" onClick={handleWhoAmIClick}></Button>
         <Button
           text="What do I know?"
           onClick={handleWhatDoIKnowClick}
