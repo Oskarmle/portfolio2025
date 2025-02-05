@@ -29,6 +29,16 @@ export default function Frontpage() {
     router.navigate({ to: "/how-do-i-contact" });
   };
 
+  const handleInstagramClick = () => {
+    window.open("https://www.instagram.com/photography_by_oskar/", "_blank");
+  }
+  const handleGithubClick = () => {
+    window.open("https://github.com/Oskarmle", "_blank");
+  }
+  const handleLinkedinClick = () => {
+    window.open("https://www.linkedin.com/in/oskar-morris-ledskov-eriksen-1b537424b/", "_blank");
+  }
+
   return (
     <div>
       <div className="frontpageContainer">
@@ -47,9 +57,9 @@ export default function Frontpage() {
         ></Button>
       </div>
       <div className="socialsContainer">
-        <Socials type="instagram"></Socials>
-        <Socials type="github"></Socials>
-        <Socials type="linkedin"></Socials>
+        <Socials type="instagram" onClick={handleInstagramClick}></Socials>
+        <Socials type="github" onClick={handleGithubClick}></Socials>
+        <Socials type="linkedin" onClick={handleLinkedinClick}></Socials>
       </div>
     </div>
   );
