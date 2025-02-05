@@ -1,6 +1,6 @@
 import { useNavigate } from "@tanstack/react-router";
 
-import styles from "./BackButton.module.css";
+import styles from "./backButton.module.css";
 
 export default function BackButton() {
   const navigate = useNavigate();
