@@ -1,34 +1,34 @@
 import Skills from "../skills/Skills";
 import styles from "./project.module.css";
 
-export default function Project() {
+import { SkillsProps } from "../skills/Skills";
+
+type ProjectProps = {
+  title: string;
+  text: string[];
+  techStack: SkillsProps[];
+  githubLink: string;
+};
+
+export default function Project({
+  title,
+  text,
+  techStack,
+  githubLink,
+}: ProjectProps) {
   function handleGithubClick() {
-    console.log("Github clicked");
+    // console.log({ githubLink });
+    window.open(githubLink, "_blank");
   }
+
   return (
     <div className={styles.projectContainer}>
-      <h1 className={styles.title}>GBTK Webpage</h1>
+      <h1 className={styles.title}>{title}</h1>
       <div className={styles.textContainer}>
-        <p className={(styles.text1, styles.text)}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p className={(styles.text2, styles.text)}>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <p className={(styles.text3, styles.text)}>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.{" "}
-        </p>
-        <p className={(styles.text4, styles.text)}>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
-        <p className={(styles.text5, styles.text)}>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-        </p>
+        {text.map((text, index) => (
+          <p key={index}>{text}</p>
+        ))}
+        <p className={(styles.text1, styles.text)}></p>
       </div>
       <div className={styles.techStack}>
         <p className={styles.techHeader}>Technologies used</p>
@@ -38,12 +38,9 @@ export default function Project() {
             <p className={styles.githubLink}>Github</p>
           </div>
           <div className={styles.line}></div>
-          <Skills type="css"></Skills>
-          <Skills type="react"></Skills>
-          <Skills type="html"></Skills>
-          <Skills type="git"></Skills>
-          <Skills type="github"></Skills>
-          <Skills type="javascript"></Skills>
+          {techStack.map((tech, index) => (
+            <Skills key={index} type={tech.type} />
+          ))}
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import styles from "./skills.module.css";
 
-type Skills = {
+export type SkillsProps = {
   type:
     | "css"
     | "docker"
@@ -15,7 +15,7 @@ type Skills = {
     | "typescript";
 };
 
-export default function Skills({ type }: Skills) {
+export default function Skills({ type }: SkillsProps) {
   const iconPath = `assets/skills/${type}.svg`;
 
   return (

@@ -8,6 +8,7 @@ import styles from "./what-have-i-done.module.css";
 import Project from "../../components/projects/Project";
 import Button from "../../components/button/Button";
 import BackButton from "../../components/backButton/BackButton";
+import { SkillsProps } from "../../components/skills/Skills";
 
 export const Route = createFileRoute("/what-have-i-done/")({
   component: RouteComponent,
@@ -22,6 +23,86 @@ function RouteComponent() {
     adaptiveHeight: true,
   };
 
+  const projects: {
+    title: string;
+    text: string[];
+    techStack: SkillsProps[];
+    githubLink: string;
+  }[] = [
+    {
+      title: "GBTK Webpage",
+      text: [
+        "Final exam project for Multimediedesigner at CPH Business Academy. Developed by myself.",
+        "The project uses React as the frontend, and has a Supabase backend, which is being utilized for news and events.",
+        "I Built this over the course of 6 weeks, and made the design and layout myself, also including posters and other marketing material.",
+        "I chose to built in React as i had the elective Frontend Development on the third semester, and wanted to learn more about React.",
+        "The solution was purpose built for the table tennis club in Gladsaxe, but sadly the project was never implemented.",
+      ],
+      techStack: [
+        { type: "css" },
+        { type: "react" },
+        { type: "figma" },
+        { type: "github" },
+        { type: "javascript" },
+      ],
+      githubLink: "https://github.com/Oskarmle/gbtk",
+    },
+    {
+      title: "DAOS website (Frontend)",
+      text: [
+        "Frontend part of the first semester exam for web development at CPH Business Academy. Develop by myself.",
+        "The project uses React with TypeScript, and has an accompanying backend built in Nest.js.",
+        "THe project include functionality for creating content for the website, as well as creating a user.",
+        "The functions of the webpage changes depending if the user is logged in or not.",
+        "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
+  ],
+  techStack: [
+    { type: "react" },
+    { type: "css" },
+    { type: "git" },
+    { type: "github" },
+    { type: "typescript" },
+  ],
+  githubLink: "https://github.com/Oskarmle/Daos_frontend",
+},
+    {
+      title: "DAOS website (Backend)",
+      text: [
+        "Backend part of the first semester exam for web development at CPH Business Academy. Develop by myself.",
+        "The project uses Nest.js with TypeScript, and has an accompanying  Frontend built in React.",
+        "THe project include functionality for creating content for the website, as well as creating a user.",
+        "The backend os connected to a MongoDB database, and uses Jwt for authentication.",
+        "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
+  ],
+  techStack: [
+    { type: "nestjs" },
+    { type: "git" },
+    { type: "github" },
+    { type: "typescript" },
+    { type: "mongodb" },
+  ],
+  githubLink: "https://github.com/Oskarmle/daos_backend",
+},
+    {
+      title: "Player data collection",
+      text: [
+        "Backend part of the first semester exam for web development at CPH Business Academy. Develop by myself.",
+        "The project uses Nest.js with TypeScript, and has an accompanying  Frontend built in React.",
+        "THe project include functionality for creating content for the website, as well as creating a user.",
+        "The backend os connected to a MongoDB database, and uses Jwt for authentication.",
+        "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
+  ],
+  techStack: [
+    { type: "html" },
+    { type: "git" },
+    { type: "github" },
+    { type: "javascript" },
+    { type: "mongodb" },
+  ],
+  githubLink: "https://github.com/Oskarmle/daos_backend",
+},
+  ];
+
   return (
     <div>
       <div className={styles.buttonContainer}>
@@ -29,9 +110,15 @@ function RouteComponent() {
       </div>
       <BackButton></BackButton>
       <Slider {...settings}>
-        <Project />
-        <Project />
-        <Project />
+        {projects.map((project, index) => (
+          <Project
+            key={index}
+            techStack={project.techStack}
+            githubLink={project.githubLink}
+            text={project.text}
+            title={project.title}
+          />
+        ))}
       </Slider>
     </div>
   );
