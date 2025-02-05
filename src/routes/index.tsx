@@ -33,15 +33,15 @@ export default function Frontpage() {
     <div>
       <div className="frontpageContainer">
         <Button variant="primary" text="Who am I?" onClick={handleWhoAmIClick}></Button>
-        <Button
+        <Button variant="primary"
           text="What do I know?"
           onClick={handleWhatDoIKnowClick}
         ></Button>
-        <Button
+        <Button variant="primary"
           text="What have I done?"
           onClick={handleWhatHaveIDoneClick}
         ></Button>
-        <Button
+        <Button variant="primary"
           text="How do I contact?"
           onClick={handleHowDoIContactClick}
         ></Button>

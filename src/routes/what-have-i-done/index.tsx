@@ -41,7 +41,7 @@ function RouteComponent() {
       techStack: [
         { type: "css" },
         { type: "react" },
-        { type: "figma" },
+        // { type: "figma" },
         { type: "github" },
         { type: "javascript" },
       ],
