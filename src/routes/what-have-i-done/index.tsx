@@ -52,7 +52,7 @@ function RouteComponent() {
       text: [
         "Frontend part of the first semester exam for web development at CPH Business Academy. Develop by myself.",
         "The project uses React with TypeScript, and has an accompanying backend built in Nest.js.",
-        "THe project include functionality for creating content for the website, as well as creating a user.",
+        "The project include functionality for creating content for the website, as well as creating a user.",
         "The functions of the webpage changes depending if the user is logged in or not.",
         "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
   ],
@@ -70,7 +70,7 @@ function RouteComponent() {
       text: [
         "Backend part of the first semester exam for web development at CPH Business Academy. Develop by myself.",
         "The project uses Nest.js with TypeScript, and has an accompanying  Frontend built in React.",
-        "THe project include functionality for creating content for the website, as well as creating a user.",
+        "The project include functionality for creating content for the website, as well as creating a user.",
         "The backend os connected to a MongoDB database, and uses Jwt for authentication.",
         "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
   ],
@@ -86,11 +86,11 @@ function RouteComponent() {
     {
       title: "Player data collection",
       text: [
-        "Backend part of the first semester exam for web development at CPH Business Academy. Develop by myself.",
-        "The project uses Nest.js with TypeScript, and has an accompanying  Frontend built in React.",
-        "THe project include functionality for creating content for the website, as well as creating a user.",
-        "The backend os connected to a MongoDB database, and uses Jwt for authentication.",
-        "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
+        "Hobby project for collecting and showcasing stats for my clubs table tennis players.",
+        "The project uses basic html, css and javascript for the frontend, but will be moved to react later",
+        "The project uses express.js for the backend, and has a MongoDB database for storing the data.",
+        "The project also contains a webpage scraper built in python, which collects data from bordtennisportalen.dk",
+        "The project was designed to be a hobby project, and is still in development.",
   ],
   techStack: [
     { type: "html" },

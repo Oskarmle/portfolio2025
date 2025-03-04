@@ -25,9 +25,9 @@ export default function Frontpage() {
     router.navigate({ to: "/what-have-i-done" });
   };
 
-  const handleHowDoIContactClick = () => {
-    router.navigate({ to: "/how-do-i-contact" });
-  };
+  // const handleHowDoIContactClick = () => {
+  //   router.navigate({ to: "/how-do-i-contact" });
+  // };
 
   const handleInstagramClick = () => {
     window.open("https://www.instagram.com/photography_by_oskar/", "_blank");
@@ -51,10 +51,10 @@ export default function Frontpage() {
           text="What have I done?"
           onClick={handleWhatHaveIDoneClick}
         ></Button>
-        <Button variant="primary"
+        {/* <Button variant="primary"
           text="How do I contact?"
           onClick={handleHowDoIContactClick}
-        ></Button>
+        ></Button> */}
       </div>
       <div className="socialsContainer">
         <Socials type="instagram" onClick={handleInstagramClick}></Socials>
