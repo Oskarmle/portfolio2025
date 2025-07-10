@@ -32,6 +32,7 @@ function RouteComponent() {
           <Skills type="nodejs"></Skills>
           <Skills type="react"></Skills>
           <Skills type="typescript"></Skills>
+          <Skills type="react native"></Skills>
         </div>
       </div>
     </div>

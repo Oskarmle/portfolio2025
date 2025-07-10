@@ -55,16 +55,16 @@ function RouteComponent() {
         "The project include functionality for creating content for the website, as well as creating a user.",
         "The functions of the webpage changes depending if the user is logged in or not.",
         "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
-  ],
-  techStack: [
-    { type: "react" },
-    { type: "css" },
-    { type: "git" },
-    { type: "github" },
-    { type: "typescript" },
-  ],
-  githubLink: "https://github.com/Oskarmle/Daos_frontend",
-},
+      ],
+      techStack: [
+        { type: "react" },
+        { type: "css" },
+        { type: "git" },
+        { type: "github" },
+        { type: "typescript" },
+      ],
+      githubLink: "https://github.com/Oskarmle/Daos_frontend",
+    },
     {
       title: "DAOS website (Backend)",
       text: [
@@ -73,16 +73,16 @@ function RouteComponent() {
         "The project include functionality for creating content for the website, as well as creating a user.",
         "The backend os connected to a MongoDB database, and uses Jwt for authentication.",
         "The design were made available by the teacher, and the project was built over the course of 2 weeks.",
-  ],
-  techStack: [
-    { type: "nestjs" },
-    { type: "git" },
-    { type: "github" },
-    { type: "typescript" },
-    { type: "mongodb" },
-  ],
-  githubLink: "https://github.com/Oskarmle/daos_backend",
-},
+      ],
+      techStack: [
+        { type: "nestjs" },
+        { type: "git" },
+        { type: "github" },
+        { type: "typescript" },
+        { type: "mongodb" },
+      ],
+      githubLink: "https://github.com/Oskarmle/daos_backend",
+    },
     {
       title: "Player data collection",
       text: [
@@ -91,16 +91,31 @@ function RouteComponent() {
         "The project uses express.js for the backend, and has a MongoDB database for storing the data.",
         "The project also contains a webpage scraper built in python, which collects data from bordtennisportalen.dk",
         "The project was designed to be a hobby project, and is still in development.",
-  ],
-  techStack: [
-    { type: "html" },
-    { type: "git" },
-    { type: "github" },
-    { type: "javascript" },
-    { type: "mongodb" },
-  ],
-  githubLink: "https://github.com/Oskarmle/daos_backend",
-},
+      ],
+      techStack: [
+        { type: "html" },
+        { type: "git" },
+        { type: "github" },
+        { type: "javascript" },
+        { type: "mongodb" },
+      ],
+      githubLink: "https://github.com/Oskarmle/daos_backend",
+    },
+    {
+      title: "Player data collection",
+      text: [
+        "Purpose built website for a small client, where people can read about his guide business",
+        "The project is built in React with Vite, and has a larger focus on SEO than my other projects",
+        "The future plans for the project is contact solution by mail, and a way for the owner to turn of the page when he is unavailable",
+      ],
+      techStack: [
+        { type: "react" },
+        { type: "git" },
+        { type: "github" },
+        { type: "typescript" },
+      ],
+      githubLink: "https://github.com/Oskarmle/fredensborg_palace_guide",
+    },
   ];
 
   return (

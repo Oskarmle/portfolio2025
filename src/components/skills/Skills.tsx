@@ -12,7 +12,8 @@ export type SkillsProps = {
     | "nestjs"
     | "nodejs"
     | "react"
-    | "typescript";
+    | "typescript"
+    | "react native";
 };
 
 export default function Skills({ type }: SkillsProps) {
